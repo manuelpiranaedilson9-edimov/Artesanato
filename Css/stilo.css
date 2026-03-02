@@ -1,0 +1,303 @@
+/* container principal que envolve todas as páginas */
+/* importar tipografia global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.site{
+    background-color: #fdfdfd; /* base clara para destacar o conteúdo */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 80px;
+}
+/* mantém a barra fixa no topo com um tom escuro consistente */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1200;
+    background-color: #343a40 !important; /* mesma cor de .bg-dark do bootstrap */
+}
+
+/* cabeçalho genérico utilizado em várias páginas */
+.cabecalho{
+    background-color: #ffffff; /* tom suave para o cabeçalho */
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    font-size: 25px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.cabecalho h1{ margin: 0; color: #0d3b66; }
+/* área de texto principal de cada página */
+.corpo{
+    background-color: aqua;
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* bloco de introdução usado especialmente na página inicial */
+.header{
+    position: static;
+    color: #333;
+    background-color: transparent;
+    width: 100%;
+}
+.header p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    
+}
+
+.header h1{
+    text-align: center;
+    color: #0d3b66;
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+/* títulos secundários centralizados em várias seções */
+h3{
+    color: #0d3b66;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* cartões da galeria/ícones de tipo na página inicial */
+/* os cartões agora crescem conforme o conteúdo para exibir o link "ler mais" */
+.box{
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    max-width: 100%;
+    /* permitimos altura automática em vez de fixa */
+    min-height: 320px; /* tamanho mínimo para uniformidade */
+    height: auto;
+    overflow: visible;
+    gap: 8px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+
+/* Garantir que imagens dentro de .box tenham tamanho uniforme */
+.box img{
+    width: 100%;
+    max-width: none;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.corpo, .conteudo h4 p {
+ text-align: center;
+}
+
+
+
+.footer{
+    background-color: black;
+    height: auto;
+    min-height: 65px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.footer img{
+    flex-basis: auto;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer li{
+    margin-right: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+/* estilos responsivos */
+/* tipografia global */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+@media only screen and (max-width:768px) {
+    .conteudo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+    
+    .cabecalho{
+        background-color: yellow;
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        font-size: 18px;
+        font-style: italic;
+        padding: 10px;
+    }
+
+    .site{
+        padding-top: 56px;
+    }
+    
+    .corpo{
+        padding: 15px 10px;
+        margin-top: 0;
+    }
+    
+    .footer{
+        min-height: 60px;
+        padding: 10px;
+    }
+    
+    .footer img{
+        width: 30px;
+        height: 30px;
+        margin: 0 8px;
+    }
+    
+    .footer li{
+        margin-right: 10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .conteudo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .box{
+        height: 260px;
+    }
+
+    .box img{
+        height: 160px;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+    
+    .site{
+        padding-top: 56px;
+        padding-bottom: 80px;
+    }
+    
+    .cabecalho{
+        background-color: yellow;
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        font-size: 14px;
+        font-style: italic;
+        padding: 8px;
+    }
+    
+    .corpo{
+        padding: 10px 8px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 18px;
+    }
+    
+    h4{
+        font-size: 14px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    .footer{
+        min-height: 50px;
+        padding: 8px;
+    }
+    
+    .footer img{
+        width: 25px;
+        height: 25px;
+        margin: 0 6px;
+    }
+    
+    .footer li{
+        margin-right: 8px;
+        font-size: 10px;
+        padding: 8px 10px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento: HTML5 -->
+<html lang="en">
+<!-- Elemento raiz: define o idioma da página -->
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8"> <!-- Conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade em dispositivos móveis -->
+    <title>Trabalho artesenal</title> <!-- Título mostrado na aba do navegador -->
+    <!-- Biblioteca CSS do Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Script do Bootstrap (JS bundle) -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Estilos personalizados do projeto -->
+    <link rel="stylesheet" href="Css/stilo.css">
+</head>
+<body>
+    <!-- Barra de navegação principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid"> <!-- Contêiner fluido para espaçamento interno -->
+            <a class="navbar-brand" href="index.html">Artesanato</a> <!-- Link de marca -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alterar navegação">
+                <span class="navbar-toggler-icon"></span> <!-- Ícone do botão em telas pequenas -->
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal"> <!-- Menu colapsável -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!-- Lista de itens de navegação -->
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li> <!-- Item: Início -->
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li> <!-- Item: Sobre -->
+                    <li class="nav-item"><a class="nav-link" href="tipos.html">Tipos</a></li> <!-- Item: Tipos -->
+                    <li class="nav-item"><a class="nav-link" href="autore.html">Autor</a></li> <!-- Item: Autor -->
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li> <!-- Item: Contacto -->
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li> <!-- Item: Galeria -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero/banner principal -->
+    <header class="bg-dark text-white text-center py-5" style="background-image:url('IMG/maxresdefault.jpg');background-size:cover;background-position:center; padding-top:56px;">
+        <div class="container">
+            <h1 class="display-4">Artesanato: Criatividade e Tradição</h1>
+            <p class="lead">Bem-vindo ao universo das mãos que transformam matéria-prima em arte</p>
+        </div>
+    </header>
+
+    <!-- Estrutura principal do site -->
+    <div class="site"> 
+
+        <!-- Cabeçalho da página -->
+        <div class="cabecalho">
+            <h3>PRESERVAR A CULTURA E A TRADIÇÃO</h3>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="corpo"> 
+            <!-- Caixa de introdução/descrição (pode ser fixa) -->
+            <div class="header">
+                <h1> Artesanato é a arte de criar objetos por meio da transformção da matéria-prima, usando as mãos como o principal instrumento de trabalho </h1>
+                <hr style="border-color: black;"> <!-- Linha horizontal separadora -->
+                <p><b>As feramentas e equipamentos são sempres auxiliares, não se sobrepondo ao fazer manual</b></p>
+            </div>
+
+            <h3>Tipos de trabalho Artesanal</h3> <!-- Subtítulo da seção -->
+
+            <!-- Grid de conteúdo com várias caixas -->
+            <div class="conteudo">
+
+                <!-- Cada .box representa um cartão com imagem, título e texto -->
+                <div class="box">
+                    <img src="IMG/pintura e desenho.png" alt=""> <!-- Imagem representativa -->
+                    <h4>Artesanato com a reciclagem</h4> <!-- Título do item -->
+                    <p>O artesenato com a reciclagem tem  como uma das suas bases a criação... <a href="reciclagem.html">Ler mais</a></p> <!-- Texto e link -->
+                </div>
+
+                <div class="box">
+                    <img src="IMG/Sabonetes.jpg" alt=""> <!-- Imagem clicável -->
+                    <h4>Sabonetes artesanais e cosméticos</h4>
+                    <p>No mercado cosméticos, os sabonetes artesanais se destacam, como ... <a href="sabonetes.html">Ler mais</a></p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/velas.jpg" alt="">
+                    <h4>Velas artesanais</h4>
+                    <p>As velas artesanais cumprem com um õptimo papel dentro desse mercado de artesanato.... <a href="velas.html">Ler mais</a></p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/Eva.jpg" alt="">
+                    <h4>Artesanato em EVA</h4>
+                    <p>um dos tipos mais de artesanatos vendidos é o de EVA... <a href="eva.html">Ler mais</a></p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/decoupage.jpg" alt="">
+                    <h4>Artesanato em decoupage</h4>
+                    <p>Uma das mais belas e cuidadosas técnicas de artesanato, é docoupage dá origem a muitos produtos chamativos... <a href="IMG/banco.jpg">Ler mais</a> </p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/coche.jpg" alt="">
+                    <h4>Artesanato em croche</h4>
+                    <p>O crochê é uma outra grande tradição brasileira repasados por gerações e mais gerações... <a href="sitetrabalhoparaprova/Croche.html">Ler mais</a> </p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/biscuit.jpg" alt="">
+                    <h4>Artesanato em biscuit</h4>
+                    <p>O biscuit é uma das matérias-primas de artesanato  que tem mais ganhado espaço nos ultimos... <a href="biscuit.html">Ler mais</a> </p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/sufixo.webp" alt="">
+                    <h4>Artesanato em fuxico</h4>
+                    <p>O fuxico é um tecido típico muito tradicional no brasil ele pode ser usado para dar... <a href="fuxico.html">Ler mais</a></p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/MDF.jpg" alt="">
+                    <h4>Artesanato em MDF</h4>
+                    <p>MDF é um material derivado da madeira que  muito muito usado em personalização e ... <a href="Mdf.html">Ler mais</a></p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/Bordados.jpg" alt="">
+                    <h4>Artesanato bordados</h4>
+                    <p>Os bordados trazem muita divercidade em suas criações. Basicamente, a técnica é feita com linhas.... <a href="Bordados.html">Ler mais</a></p>
+                </div>
+
+                <div class="box">
+                    <img src="IMG/pintadas a mao.jpg" alt="">
+                    <h4>Artesanato pintados à mão</h4>
+                    <p>Por fim, uma outra óptima pção são os produtos pintados a mão, a delicadeza ... <a href="pintura.html">Ler mais</a></p>
+                </div>
+
+            </div> <!-- /.conteudo -->
+        </div> <!-- /.corpo -->
+
+        <!-- Rodapé fixo com ícones de redes sociais -->
+        <div class="footer">
+            <ul>
+                <li><a href=""><img src="IMG/logo-facebook - Cópia.jpg" alt=""></a></li>
+                <li><a href=""><img src="IMG/logo-instagram.jpg" alt=""></a></li>
+                <li><a href=""><img src="IMG/logo-twitter.jpg" alt=""></a></li>
+                <li><a href=""><img src="IMG/logo-youtube.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+    </div> <!-- /.site -->
+    
+</body>
+</html>
+
+</body>
+</html>
