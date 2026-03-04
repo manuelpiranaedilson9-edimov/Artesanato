@@ -141,6 +141,7 @@ img{
     width: 100%;
     z-index: 1200;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px 20px;
@@ -166,6 +167,11 @@ img{
     margin-right: 20px;
     color: white;
     font-size: 14px;
+}
+.footer p{
+    color: white;
+    font-size: 35px;
+    margin: 0;
 }
 
 
